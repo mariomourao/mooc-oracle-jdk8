@@ -1,0 +1,41 @@
+What is the method signature of the reduce() method in the Stream interface?
+
+
+    Optional<T> reduce(BinaryOperator<T> accumulator)
+
+The accumulator of a reduction takes what as the first parameter?
+
+A partial resut ?
+
+
+An infinite stream can never be terminated, true or false?
+
+False
+
+To continue using an infinite stream, which terminal method should be used?
+forEach
+
+It is best-practice in functional programming to use the forEach() method as a terminal operation to modify state, true or false?
+
+False
+
+Which of the following is NOT a static method of the Collectors class?
+toArray
+
+The groupingBy() method of the Collectors class returns an object of what type?
+
+Map
+
+What method of the Stream interface should be used to convert a sequential stream to parallel?
+
+parallel
+
+
+Which is a useful method in the Stream interface to help debugging?
+peek
+
+
+
+Which static method of the Collectors class will provide a Collector that will create a comma separated value (CSV) string of results from a stream?
+
+joining(“,”)

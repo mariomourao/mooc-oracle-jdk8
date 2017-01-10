@@ -1,0 +1,31 @@
+Lambda expressions can be used anywhere a functional interface type is required, true or false?
+- True
+
+Which of the following is an invalid lambda expression?
+- () -> {process()}
+
+What is the annotation for a functional interface?
+- @FunctionalInterface
+
+
+UnaryOperator is a special form of which functional interface?
+- Function
+
+Which two could be considered equivalent lambda expressions of the method reference, Buffer::position?
+- (Buffer b, Integer n) -> b.position(n)
+
+??
+-effectively final
+
+What functional interface type does the removeIf method of the Collections interface take as a parameter?
+Predicate
+
+To convert all the Integers in a List, l, to their signum values, which two of the following Lambda expressions would work?
+l.replaceAll(n -> Integer.signum(n))
+l.replaceAll(Integer::signum)
+
+The potential efficiency of the Logger class methods has been improved by adding methods that use which functional interface?
+- Supplier
+
+TO_READ
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html

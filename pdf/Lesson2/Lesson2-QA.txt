@@ -1,0 +1,43 @@
+In functional programming, names may be associated with different values, true or false?
+
+- False
+
+What is the minimum number of intermediate operations that can be used in a stream?
+
+- 0
+
+Which three of the following are NOT interfaces of the stream package representing sequences of primitive values?
+
+- Byte
+- Short
+- Float
+
+Which is the only interface that directly contains a parallelStream() method?
+
+- Collection
+
+
+Which two classes have a lines() method that returns a Stream<String>?
+
+- BufferedReader
+- Files
+
+The flatMap method of the Stream interface takes a stream as input and produces multiple streams as output, true or false?
+
+- True (correct awnser False)
+
+The peek() method must not be used to alter the elements of a steam, true or false?
+
+- True
+
+To get a deterministic result within a parallel stream when finding the first element, which method should you use?
+
+- findAny  (correct awnser FindFirst)
+
+When using an Optional and a Function that returns an Optional, you should use which method?
+
+- flatMap
+
+The Optional class helps to reduce which type of exception?
+
+- NullPointerException 

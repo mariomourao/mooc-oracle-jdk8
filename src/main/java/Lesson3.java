@@ -108,7 +108,7 @@ public class Lesson3 {
 
       //stream.distinct();
 
-      return stream.map(String::toLowerCase).filter(x->x.contains("c")).collect(Collectors.toList());
+      return stream.distinct().map(String::toLowerCase).filter(x->x.contains("c")).collect(Collectors.toList());
 
   }
 
@@ -130,9 +130,10 @@ public class Lesson3 {
     RandomWords fullWordList = new RandomWords();
     List<String> wordList = fullWordList.createList(200000);
 
-//    measure("Sequential", () -> computeLevenshtein(wordList, false));
-//    measure("Parallel", () -> computeLevenshtein(wordList, true));
-    
+    //measure("Sequential", () -> computeLevenshtein(wordList, false));
+    //measure("Parallel", () -> computeLevenshtein(wordList, true));
+
+
     measure("Sequential", () -> processWords(wordList, false));
     measure("Parallel", () -> processWords(wordList, true));
   }
